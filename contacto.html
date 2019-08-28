@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Esta etiqueta maneja las configuraciones de la pagina-->
+		<meta charset="UTF-8">
+		<title>Primer Proyecto Web</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<style type="text/css">
+			header{
+				background-color: #040F7B;
+				height: 40px;
+				padding-top: 5px;
+			}
+			ul{
+				margin-left: 10px;
+			}
+			li{
+				float:left;
+			}
+			a{
+				padding-top: 10px;
+				padding-right: 10px;
+				padding-left: 10px;
+				padding-bottom: 10px;
+				display: block;
+				color: #fff;
+			}
+			section{
+				float: left;
+			}
+			p{
+				text-align: justify;
+				margin-right: 20px;
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="contacto.html">Contacto</a>
+					</li>
+					<li>
+						<a href="#">Quienes Somos</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--Aqui se escribe el contenido-->
+		<!--Seccion general del sitio-->
+		<section style="margin-top: 30px; width: 100%">
+			<section style="width: 30%">
+				hola
+			</section>
+			<section style="width: 70%">
+				<h2 style="font-weight: bold;text-align: center">Formulario de Contacto </h2>
+				<br>
+				<form method="post" action="">
+					<label>Nombre:</label>
+					<input type="text" name="nombre" placeholder="Ingresa tu nombre"><br>
+					<label>Email:</label>
+					<input type="email" name="email" placeholder="Ingresa tu email"><br>
+					<label>País de Origen:</label>
+					<select name="pais">
+						<option value="">Seleccione...</option>
+						<option value="1">Chile</option>
+						<option value="2">Argentina</option>
+						<option value="3">Perú</option>
+						<option value="4">Venezuela</option>
+					</select><br>
+					<label>Comentario:</label>
+					<textarea name="comentario" placeholder="Ingresa tu comentario" cols="15" rows="10"></textarea><br>
+					<input type="submit" value="Enviar">
+					<!-- <button type="submit">Enviar</button> -->
+				</form>
+			</section>
+		</section>
+		<!--fin seccion general-->		
+		<footer style="width: 100%">
+			Pie de página
+		</footer>
+	</body>
+</html>
